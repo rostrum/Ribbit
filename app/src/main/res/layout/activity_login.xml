@@ -46,4 +46,11 @@
         android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarLogin"
+        android:layout_below="@+id/signUpText"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

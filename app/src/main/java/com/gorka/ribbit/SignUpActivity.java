@@ -9,10 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 
 public class SignUpActivity extends ActionBarActivity {
@@ -21,11 +25,15 @@ public class SignUpActivity extends ActionBarActivity {
     protected EditText mPassword;
     protected EditText mEmail;
     protected Button mSignUpButton;
+    @InjectView(R.id.progressBar) ProgressBar mProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        ButterKnife.inject(this);
+        mProgressBar.setVisibility(View.INVISIBLE);
 
         mUsername = (EditText)findViewById(R.id.userNameField);
         mPassword = (EditText)findViewById(R.id.passwordField);
@@ -53,6 +61,7 @@ public class SignUpActivity extends ActionBarActivity {
                 }
                 else {
                     // create the new user!
+                    mProgressBar.setVisibility(View.VISIBLE);
                     ParseUser newUser = new ParseUser();
                     newUser.setUsername(username);
                     newUser.setPassword(password);
@@ -62,6 +71,7 @@ public class SignUpActivity extends ActionBarActivity {
                         public void done(ParseException e) {
                             if (e == null) {
                                 //Success!
+                                mProgressBar.setVisibility(View.INVISIBLE);
                                 Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);

@@ -7,14 +7,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 
 public class LoginActivity extends ActionBarActivity {
@@ -25,12 +30,15 @@ public class LoginActivity extends ActionBarActivity {
     protected Button mLoginButton;
 
     protected TextView mSignUpTextView;
+    @InjectView(R.id.progressBarLogin) ProgressBar mProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        ButterKnife.inject(this);
+        mProgressBar.setVisibility(View.INVISIBLE);
 
         mSignUpTextView = (TextView)findViewById(R.id.signUpText);
         mSignUpTextView.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +52,7 @@ public class LoginActivity extends ActionBarActivity {
         mPassword = (EditText)findViewById(R.id.passwordField);
         mLoginButton = (Button)findViewById(R.id.loginButton);
         mLoginButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 String username = mUsername.getText().toString();
@@ -63,9 +72,13 @@ public class LoginActivity extends ActionBarActivity {
                 }
                 else {
                     // Login
+                    mProgressBar.setVisibility(View.VISIBLE);
                     ParseUser.logInInBackground(username, password, new LogInCallback() {
+
                         @Override
                         public void done(ParseUser parseUser, ParseException e) {
+                            mProgressBar.setVisibility(View.INVISIBLE);
+
                             if (e == null) {
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
