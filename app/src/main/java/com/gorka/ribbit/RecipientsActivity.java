@@ -113,6 +113,10 @@ public class RecipientsActivity extends ListActivity {
             return true;
         }
 
+        if (id == R.id.action_send){
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -120,6 +124,11 @@ public class RecipientsActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
-        mSendMenuItem.setVisible(true);
+        if(l.getCheckedItemCount() > 0) {
+            mSendMenuItem.setVisible(true);
+        }
+        else {
+            mSendMenuItem.setVisible(false);
+        }
     }
 }
