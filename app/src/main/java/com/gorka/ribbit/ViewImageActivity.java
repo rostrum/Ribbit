@@ -9,6 +9,9 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import static com.squareup.picasso.Picasso.*;
 
 
@@ -25,6 +28,13 @@ public class ViewImageActivity extends ActionBarActivity {
 
         Picasso.with(this).load(imageUri.toString()).into(imageView);
 
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                finish();
+            }
+        },10*1000); //times 1000 miliseconds
     }
 
 
