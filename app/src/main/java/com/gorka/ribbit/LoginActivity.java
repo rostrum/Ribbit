@@ -1,5 +1,7 @@
 package com.gorka.ribbit;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -22,7 +24,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends Activity {
 
 
     protected EditText mUsername;
@@ -39,6 +41,11 @@ public class LoginActivity extends ActionBarActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
         mProgressBar.setVisibility(View.INVISIBLE);
+
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
 
         mSignUpTextView = (TextView)findViewById(R.id.signUpText);
         mSignUpTextView.setOnClickListener(new View.OnClickListener() {
