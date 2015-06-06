@@ -14,7 +14,8 @@
     <TextView
         android:id="@+id/title"
         android:text="@string/app_name"
-        style="@style/AuthTitle"/>
+        style="@style/AuthTitle"
+        android:layout_marginTop="180dp"/>
 
     <TextView
         android:text="@string/subtitle"
@@ -23,7 +24,9 @@
 
     <LinearLayout
         android:id="@+id/editTextLayout"
-        style="@style/AuthFileContainer">
+        style="@style/AuthFileContainer"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true">
 
     <EditText
         android:id="@+id/userNameField"
@@ -63,8 +66,9 @@
         android:hint="@string/sign_up_button_label"
         android:layout_below="@+id/editTextLayout"
         android:layout_toLeftOf="@id/buttonDivider"
-        android:layout_alignParentLeft="true"
-        android:layout_marginRight="0dp"/>
+        android:layout_alignLeft="@+id/editTextLayout"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"/>
 
     <Button
         style="@style/AuthButton"
@@ -72,9 +76,10 @@
         android:id="@+id/cancelButton"
         android:hint="@string/sign_up_button_label"
         android:layout_below="@+id/editTextLayout"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/editTextLayout"
         android:layout_toRightOf="@id/buttonDivider"
-        android:layout_marginLeft="0dp"/>
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"/>
 
     <ProgressBar
         android:layout_width="wrap_content"
