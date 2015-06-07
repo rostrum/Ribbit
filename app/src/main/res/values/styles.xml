@@ -187,6 +187,15 @@
         <item name="android:background">@drawable/button_custom</item>
     </style>
 
+    <style name="GridImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
 
     <!--<style name="ImageButtonAppTheme" parent="android:Widget.ImageButton">-->
         <!--<item name="android:background">@drawable/apptheme_btn_default_holo_light</item>-->
