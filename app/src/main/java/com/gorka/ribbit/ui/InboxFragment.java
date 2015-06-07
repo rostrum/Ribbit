@@ -62,6 +62,13 @@ public class InboxFragment extends ListFragment {
 
         getActivity().setProgressBarIndeterminateVisibility(true);
         mProgressBar.setVisibility(View.VISIBLE);
+//
+//        mSwipeRefreshLayout.post(new Runnable() {
+//            @Override
+//            public void run() {
+//                mSwipeRefreshLayout.setRefreshing(true);
+//            }
+//        });
 
 
         retrieveMessages();
