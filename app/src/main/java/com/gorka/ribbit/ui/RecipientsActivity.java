@@ -1,9 +1,8 @@
-package com.gorka.ribbit;
+package com.gorka.ribbit.ui;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -14,6 +13,9 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.gorka.ribbit.utils.FileHelper;
+import com.gorka.ribbit.utils.ParseConstants;
+import com.gorka.ribbit.R;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;

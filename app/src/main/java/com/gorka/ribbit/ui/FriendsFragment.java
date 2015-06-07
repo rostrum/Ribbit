@@ -1,4 +1,4 @@
-package com.gorka.ribbit;
+package com.gorka.ribbit.ui;
 
 
 import android.app.AlertDialog;
@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.gorka.ribbit.utils.ParseConstants;
+import com.gorka.ribbit.R;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;

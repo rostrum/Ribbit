@@ -1,4 +1,4 @@
-package com.gorka.ribbit;
+package com.gorka.ribbit.ui;
 
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
+import com.gorka.ribbit.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.Timer;

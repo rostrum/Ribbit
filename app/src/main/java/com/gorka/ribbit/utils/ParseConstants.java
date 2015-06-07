@@ -1,4 +1,4 @@
-package com.gorka.ribbit;
+package com.gorka.ribbit.utils;
 
 /**
  * Created by padres on 2/06/15.

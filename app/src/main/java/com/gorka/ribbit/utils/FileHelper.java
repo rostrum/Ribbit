@@ -1,4 +1,4 @@
-package com.gorka.ribbit;
+package com.gorka.ribbit.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
