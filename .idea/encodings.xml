@@ -52,6 +52,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_overflow.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_send.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_picture.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_stat_ic_launcher.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_tab_friends.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_tab_inbox.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_video.png" charset="UTF-8" />
@@ -115,6 +116,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_menu_overflow.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_menu_send.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_picture.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_stat_ic_launcher.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_tab_friends.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_tab_inbox.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_video.png" charset="UTF-8" />
@@ -178,6 +180,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_menu_overflow.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_menu_send.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_picture.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_stat_ic_launcher.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_friends.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_tab_inbox.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_video.png" charset="UTF-8" />
@@ -237,6 +240,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_menu_overflow.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_menu_send.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_picture.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_stat_ic_launcher.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_tab_friends.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_tab_inbox.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_video.png" charset="UTF-8" />
